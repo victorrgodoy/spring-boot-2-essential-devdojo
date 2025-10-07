@@ -6,9 +6,7 @@ import academy.devdojo.springboot2.requests.AnimePutRequestBody;
 import org.mapstruct.Mapper;
 
 @Mapper(componentModel = "spring")
-public abstract class AnimeMapper {
-
-    public abstract Anime toAnime(AnimePostRequestBody animePostRequestBody);
-
-    public abstract Anime toAnime(AnimePutRequestBody animePutRequestBody);
+public interface AnimeMapper {
+    Anime toAnime(AnimePostRequestBody animePostRequestBody);
+    Anime toAnime(AnimePutRequestBody animePutRequestBody);
 }
